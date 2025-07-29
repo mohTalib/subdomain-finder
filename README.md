@@ -29,7 +29,7 @@ This tool helps penetration testers, bug bounty hunters, and developers identify
 
 1. **Clone or download this repository**:
     ```bash
-    git clone https://github.com/mohTalib/advanced-subdomain-finder.git
+    git clone https://github.com/mohTalib/subdomain-finder.git
     ```
 
 2. **Open Chrome** and go to:
