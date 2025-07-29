@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Subdomain Finder</title>
+  <script defer src="popup.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+  body {
+    border-radius: 40px;
+  }
+</style>
+</head>
+<body class="bg-gray-900 text-white p-5 w-96 rounded-xl font-sans">
+  <h1 class="text-2xl font-semibold mb-4 text-center">🔍 Subdomain Finder</h1>
+  <input
+    id="domainInput"
+    type="text"
+    placeholder="example.com"
+    class="w-full p-2 rounded bg-gray-800 border border-gray-600 mb-3"
+    autocomplete="off"
+  />
+<div class="flex items-center mb-3 text-sm">
+  <input type="checkbox" id="availabilityToggle" checked class="mr-2" />
+  <label for="availabilityToggle" class="select-none">Check Subdomain Availability</label>
+</div>
+  <button
+    id="fetchBtn"
+    class="w-full bg-blue-600 hover:bg-blue-700 p-2 rounded font-bold transition"
+  >
+    Find Subdomains
+  </button>
+  <br>
+  <br>
+  <button
+    id="stopBtn"
+    class="flex-1 bg-red-600 hover:bg-red-700 p-2 rounded font-bold transition hidden"
+  >
+    Stop
+  </button>
+</div>
+  <div id="status" class="text-sm text-gray-400 mt-2 min-h-[1.5rem]"></div>
+  <div
+    id="result"
+    class="mt-4 max-h-64 overflow-y-auto bg-gray-800 rounded p-3 text-sm whitespace-pre-wrap font-mono"
+  ></div>
+  <button
+    id="downloadBtn"
+    class="w-full mt-3 bg-green-600 hover:bg-green-700 p-2 rounded hidden font-semibold"
+  >
+    Download as TXT
+  </button>
+</body>
+</html>

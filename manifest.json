@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Advanced Subdomain Finder",
+  "version": "1.2",
+  "description": "Find and analyze subdomains using crt.sh and hackertarget.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://crt.sh/*",
+    "https://api.hackertarget.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}
